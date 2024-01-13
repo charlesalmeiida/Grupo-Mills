@@ -1,0 +1,93 @@
+footer {
+  padding: 5.6rem 0 0.8rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      span {
+        color: $gray-800;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 125%;
+      }
+      p {
+        max-width: 22.9rem;
+        margin: 1.6rem 0 4.5rem;
+      }
+    }
+    .right {
+      max-width: 80rem;
+      display: flex;
+      gap: 9.6rem;
+      nav {
+        ul {
+          @include flex(column, flex-start, center);
+          gap: 2.4rem;
+          li {
+            a {
+              color: $gray-800;
+              font-size: 1.6rem;
+              font-weight: 500;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+      .contact {
+        font-weight: 500;
+        color: $gray-800;
+        a {
+          color: $gray-700;
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 150%;
+          text-decoration-line: underline;
+          margin: 2.4rem 0;
+        }
+        .logos {
+          margin-top: 1.2rem;
+          @include flex-center;
+          gap: 4rem;
+        }
+      }
+      .newsletter {
+        span {
+          color: $gray-800;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+        }
+        p {
+          color: $gray-800;
+          font-weight: 500;
+          max-width: 23rem;
+          margin: 1.8rem 0;
+        }
+        form {
+          input {
+            display: flex;
+            border: none;
+            padding: 2rem 0.8rem 2rem 1.6rem;
+            &::placeholder {
+              color: $gray-700;
+              font-size: 1.4rem;
+              font-weight: 500;
+              line-height: 150%;
+            }
+          }
+          .btn-newsletter {
+            @include flexTotalCenter;
+            background-color: white;
+            padding: 1.6rem 1.6rem 1.6rem 0.8rem;
+          }
+        }
+      }
+    }
+  }
+  .copy {
+    text-align: center;
+    font-size: 14px;
+    color: $gray-800;
+  }
+}

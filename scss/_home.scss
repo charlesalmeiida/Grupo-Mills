@@ -144,3 +144,65 @@
     }
   }
 }
+
+.s-numbers {
+  background-color: $brand-green01;
+  padding: 7.6rem 0;
+  .container {
+    @include flex(row, flex-start, space-evenly);
+    .number {
+      @include flex(column, center, center);
+      gap: 1.6rem;
+      .top {
+        @include flex-center;
+        gap: 0.8rem;
+        h6 {
+          color: $gray-500;
+          font-size: 3.6rem;
+          font-weight: 700;
+          line-height: 130%;
+        }
+      }
+      .bottom {
+        p {
+          color: $gray-500;
+          opacity: 0.8;
+          max-width: 17.7rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.s-projects {
+  padding: 10rem 0 12.5rem;
+  .top {
+    text-align: center;
+    h2 {
+      margin: 2.4rem 0 6.9rem;
+    }
+  }
+  .cards-projetos {
+    @include flexSpaceBetween;
+  }
+}
+
+.s-life {
+  padding: 5.6rem 0 7.2rem;
+  background: url(../assets/img/image-banner-footer.png) no-repeat center center;
+  background-size: cover;
+  .container {
+    @include flexSpaceBetween;
+    .text {
+      h3 {
+        max-width: 30.2rem;
+        margin-bottom: 2.4rem;
+      }
+      p {
+        max-width: 20.8rem;
+        color: $gray-500;
+      }
+    }
+  }
+}
