@@ -1,0 +1,28 @@
+header {
+  padding: 3.7rem 0 1.9rem;
+  border-bottom: 1px solid rgba(245, 246, 250, 0.4);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .container {
+    @include flexSpaceBetween;
+    nav {
+      ul {
+        @include flex-center;
+        gap: 5.6rem;
+        li {
+          a {
+            color: $gray-500;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 150%;
+            transition: color 0.3s ease;
+            &:hover {
+              color: $brand-green01;
+            }
+          }
+        }
+      }
+    }
+  }
+}

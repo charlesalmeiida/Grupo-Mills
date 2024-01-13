@@ -1,0 +1,122 @@
+.btn-primary {
+  max-width: 23.2rem;
+  padding: 0 2.4rem;
+  background-color: $brand-yellow;
+  color: $gray-800;
+  font-size: 1.6rem;
+  line-height: 150%;
+  height: 5.6rem;
+  @include flex-center;
+  transition: all 0.3s ease-in-out;
+  gap: 1rem;
+  &:hover {
+    background-color: $brand-yellow02;
+    transform: scale(1.05);
+  }
+}
+
+.btn-secondary {
+  border: 0.1rem solid $gray-500;
+  background: transparent;
+  color: $gray-500;
+  font-size: 1.6rem;
+  line-height: 150%;
+  padding: 0 2.4rem;
+  height: 5.6rem;
+  @include flex-center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+  &.green {
+    border: none;
+    background-color: $brand-green01;
+    &:hover {
+      background-color: $brand-green02;
+    }
+  }
+}
+
+.card-solucoes {
+  width: 100%;
+  max-width: 38.4rem;
+  background-color: $gray-500;
+  box-shadow: 0px 1px 68.8px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  .image-card {
+    max-width: 38.4rem;
+    width: 100%;
+  }
+  .text {
+    padding: 2.4rem 0 2.4rem 1.4rem;
+    h4 {
+      color: $brand-green01;
+    }
+    p {
+      margin-top: 1.4rem;
+      max-width: 26.7rem;
+    }
+    a {
+      margin-top: 1.4rem;
+      color: $brand-yellow;
+      font-size: 1.6rem;
+      line-height: 150%;
+      @include flex-center;
+      gap: 0.4rem;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $brand-yellow02;
+        gap: 0.6rem;
+      }
+    }
+  }
+  &:hover {
+    transform: scale(1.015);
+  }
+}
+
+.card-video-depoimento {
+  h5 {
+    margin-top: 3.2rem;
+    color: $brand-green01;
+    strong {
+      color: $gray-800;
+      margin: 0 0.6rem;
+      font-size: 1.2rem;
+    }
+    span {
+      color: $gray-800;
+      font-size: 1.6rem;
+      line-height: 150%;
+    }
+  }
+}
+
+.card-projetos {
+  max-width: 384px;
+  width: 100;
+  .text {
+    margin-top: 4rem;
+    span {
+      color: $gray-800;
+      font-size: 1.4rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 2.4rem;
+      display: block;
+    }
+    ul {
+      margin-top: 40px;
+      @include flex(column, flex-start, center);
+      gap: 3.2rem;
+      li {
+        @include flex-center;
+        gap: 1.4rem;
+        &:last-child p {
+          margin-left: 1.6rem;
+        }
+      }
+    }
+  }
+}
