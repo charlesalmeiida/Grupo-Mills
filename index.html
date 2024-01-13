@@ -10,6 +10,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -24,7 +25,7 @@
             ><img src="./assets/svg/logo-mills.svg" alt="Logo Grupo Mills"
           /></a>
         </div>
-        <nav>
+        <nav data-aos="fade-left">
           <ul>
             <li><a href="#">QUEM SOMOS</a></li>
             <li><a href="#">SOLUÇÕES</a></li>
@@ -38,7 +39,7 @@
     <main>
       <section class="s-hero">
         <div class="container">
-          <div class="content">
+          <div class="content" data-aos="fade-right">
             <h1>
               Sua energia, seu futuro brilhante.
               <span>Faça o sol trabalhar para você!</span>
@@ -71,13 +72,13 @@
     <section class="s-about">
       <div class="container">
         <div class="text">
-          <div class="left">
+          <div class="left" data-aos="fade-up-right">
             <img
               src="./assets/img/about-image.png"
               alt="Foto do Grupo Mills Energia e Engenharia"
             />
           </div>
-          <div class="right">
+          <div class="right" data-aos="fade-left">
             <h5>SOBRE NÓS</h5>
             <h2>Grupo Mills: Líder em Soluções Sustentáveis</h2>
             <p>
@@ -122,7 +123,7 @@
             </button>
           </div>
         </div>
-        <div class="logos">
+        <div class="logos" data-aos="zoom-in">
           <img src="./assets/img/logo-trinasolar.png" alt="Logo trinasolar" />
           <img src="./assets/img/logo-weg.png" alt="Logo WEG" />
           <img src="./assets/img/logo-sungrow.png" alt="Logo Sungrow" />
@@ -137,7 +138,11 @@
           <h5>SERVIÇOS</h5>
           <h2>Conheça nossas soluções</h2>
         </div>
-        <div class="cards-solutions">
+        <div
+          class="cards-solutions"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div class="card-solucoes">
             <div class="image-card">
               <img
@@ -213,7 +218,7 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <div class="cards-videos">
+        <div class="cards-videos" data-aos="fade-right">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="card-video-depoimento">
@@ -320,7 +325,7 @@
           <h5>PROJETOS</h5>
           <h2>Nossos projetos</h2>
         </div>
-        <div class="cards-projetos">
+        <div class="cards-projetos" data-aos="fade-up">
           <div class="card-projetos">
             <img src="./assets/img/projeto-entregue-residencial.png" alt="" />
             <div class="text">
@@ -435,7 +440,7 @@
     </section>
     <section class="s-life">
       <div class="container">
-        <div class="text">
+        <div class="text" data-aos="fade-right">
           <h3>Energia solar para mudar sua vida!</h3>
           <p>Adquira seu sistema solar com condições especiais.</p>
         </div>
@@ -525,5 +530,7 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/animations.js"></script>
   </body>
 </html>
