@@ -23,6 +23,30 @@ header {
           }
         }
       }
+      .menu-hamburger {
+        display: none;
+      }
+    }
+  }
+  @include responsivo("tablet") {
+    .container {
+      nav {
+        ul {
+          display: none;
+        }
+        .menu-hamburger {
+          display: block;
+        }
+      }
+    }
+  }
+  @include responsivo("celular") {
+    .container {
+      .logo {
+        img {
+          max-width: 7.5rem;
+        }
+      }
     }
   }
 }

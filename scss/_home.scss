@@ -22,6 +22,41 @@
       gap: 3.2rem;
     }
   }
+  @include responsivo("tablet") {
+    padding: 18.6rem 0 14.2rem;
+    .container {
+      .content {
+        text-align: center;
+        @include flex(column, center, center);
+        h1 {
+          font-size: 5.2rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  @include responsivo("mobile") {
+    padding: 18.6rem 0 12.2rem;
+    .container {
+      .content {
+        h1 {
+          font-size: 2.9rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        .btns {
+          flex-direction: column;
+          .btn-secondary {
+            padding: 0 5.9rem;
+            max-width: 23.4rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-about {
@@ -204,5 +239,17 @@
         color: $gray-500;
       }
     }
+  }
+}
+
+.logo-whats {
+  position: fixed;
+  right: 4.5rem;
+  bottom: 4.5rem;
+  filter: drop-shadow(1px 0px 9.1px rgba(69, 130, 0, 0));
+  transition: all 0.3s ease;
+  &:hover {
+    filter: drop-shadow(1px 0.5rem 9.1px rgba(69, 130, 0, 0.6));
+    transform: scale(1.1);
   }
 }
