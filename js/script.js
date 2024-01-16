@@ -9,6 +9,18 @@ var swiper = new Swiper(".cards-videos", {
     nextEl: ".btn-next",
     prevEl: ".btn-prev",
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 56,
+    },
+    767: {
+      slidesPerView: 1.2,
+      spaceBetween: 40,
+    },
+    1200: {
+      slidesPerView: 2.5,
+      spaceBetween: 54,
+    },
+  },
 })
-
-
