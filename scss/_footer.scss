@@ -109,6 +109,11 @@ footer {
         align-items: center;
         gap: 5.6rem;
         margin-top: 4rem;
+        nav {
+          ul {
+            align-items: center;
+          }
+        }
         .contact {
           .logos {
             justify-content: center;
@@ -121,7 +126,7 @@ footer {
           }
           form {
             input {
-              padding: 2rem 10.8rem 2rem 1.6rem;
+              padding: 2rem 6.8rem 2rem 1.6rem;
             }
           }
         }
